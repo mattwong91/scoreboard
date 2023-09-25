@@ -1,0 +1,18 @@
+.score-font {
+  font-family: 'Oswald', sans-serif;
+}
+
+.bg-image {
+  background-image: url(https://images.unsplash.com/photo-1556056504-5c7696c4c28d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1576&q=80);
+  min-height: 100vh;
+  background-position: center;
+}
+
+.card-style {
+  background-color: rgba(50, 50, 50, 0.5);
+  color: rgb(255, 255, 255);
+}
+
+.score-card {
+  background-color: rgba(255, 255, 255, 0.2);
+}

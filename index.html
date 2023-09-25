@@ -6,35 +6,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
     integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Scoreboard</title>
 </head>
 
 <body>
 
-  <main class="container-fluid">
-    <section class="row text-center">
+  <main class="container-fluid bg-image">
+    <section class="row text-center p-5">
+      <div class="col-12 p-5">
+        <section class="row card-style">
+          <div class="col-6 score-font fs-1 p-5">
+            HOME
+            <p id="homeScore" class="score-card"></p>
+          </div>
+          <div class="col-6 score-font fs-1 p-5">
+            AWAY
+            <p id="awayScore" class="score-card"></p>
+          </div>
+
+        </section>
+      </div>
 
       <div class="col-6">
-        HOME
-        <p id="homeScore">07</p>
-      </div>
-      <div class="col-6">
-        AWAY
-        <p id="awayScore">13</p>
-      </div>
+        <section class="row">
 
-      <div class="col-6">
-        <button onclick="addPoints('Home', 1)" class="btn btn-primary">Home +1</button>
-        <button onclick="addPoints('Home', 3)" class="btn btn-primary">Home +3</button>
-        <button onclick="removePoints('Home', 1)" class="btn btn-primary">Home -1</button>
-        <button onclick="removePoints('Home', 5)" class="btn btn-primary">Home -5</button>
+          <div class="col-12 py-1">
+            <button onclick="addPoints('Home', 1)" class="btn btn-primary">Home +1</button>
+            <button onclick="addPoints('Home', 3)" class="btn btn-primary">Home +3</button>
+          </div>
+          <div class="col-12 py-1">
+            <button onclick="removePoints('Home', 1)" class="btn btn-primary">Home -1</button>
+            <button onclick="removePoints('Home', 5)" class="btn btn-primary">Home -5</button>
+          </div>
+
+        </section>
       </div>
       <div class="col-6">
-        <button onclick="addPoints('Away', 1)" class="btn btn-primary">Away +1</button>
-        <button onclick="addPoints('Away', 3)" class="btn btn-primary">Away +3</button>
-        <button onclick="removePoints('Away', 1)" class="btn btn-primary">Away -1</button>
-        <button onclick="removePoints('Away', 5)" class="btn btn-primary">Away -5</button>
+
+        <section class="row">
+
+          <div class="col-12 py-1">
+            <button onclick="addPoints('Away', 1)" class="btn btn-primary">Away +1</button>
+            <button onclick="addPoints('Away', 3)" class="btn btn-primary">Away +3</button>
+          </div>
+          <div class="col-12 py-1">
+            <button onclick="removePoints('Away', 1)" class="btn btn-primary">Away -1</button>
+            <button onclick="removePoints('Away', 5)" class="btn btn-primary">Away -5</button>
+          </div>
+
+        </section>
+
       </div>
 
     </section>
